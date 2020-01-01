@@ -6,7 +6,7 @@
 #    By: francisberger <francisberger@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/01 00:50:52 by francisberg       #+#    #+#              #
-#    Updated: 2020/01/01 05:27:28 by francisberg      ###   ########.fr        #
+#    Updated: 2020/01/01 05:59:36 by francisberg      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -171,6 +171,7 @@ def update_data_with(ss, releve, ws):
 
         if other not in matched_other:
             add_other(labels_ws, other)
+            matched_other.append(other) # need to clean ...
 
         label = '=VLOOKUP(E' + str(2 + i) + ';with_labels!$A:$B;2;false)'
             
